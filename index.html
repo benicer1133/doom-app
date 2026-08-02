@@ -453,36 +453,6 @@
     background: linear-gradient(180deg, var(--paper), rgba(232,220,200,0.4));
   }
 
-  .streak-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 13px 14px;
-    background: var(--void-soft);
-    margin-bottom: 18px;
-  }
-
-  .streak-card .stat-label { margin-bottom: 4px; }
-
-    .stat-row {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 18px;
-  }
-
-  .stat-row .streak-card {
-    flex: 1;
-    margin-bottom: 0;
-  }
-
-  .streak-flame {
-    font-size: 26px;
-    color: var(--amber);
-    font-variant-numeric: tabular-nums;
-  }
-
   /* ---------- bottom tab bar ---------- */
 
   #tabbar {
@@ -560,7 +530,7 @@
   <section class="page" id="page-analysis">
     <div class="analysis-header">Your stats</div>
 
-    <div class="stat-grid">
+<div class="stat-grid">
       <div class="stat-card">
         <div class="stat-label">Today</div>
         <div class="stat-value" id="stat-today-time">0m</div>
@@ -581,22 +551,15 @@
         <div class="stat-value" id="stat-week-opens">0</div>
         <div class="stat-sub">average, last 7 days</div>
       </div>
-    </div>
-
-    <div class="stat-row">
-      <div class="streak-card">
-        <div>
-          <div class="stat-label">Current streak</div>
-          <div class="stat-sub">consecutive days opened</div>
-        </div>
-        <div class="streak-flame" id="stat-streak">0 days</div>
+      <div class="stat-card">
+        <div class="stat-label">Current streak</div>
+        <div class="stat-value" id="stat-streak">0 days</div>
+        <div class="stat-sub">consecutive days opened</div>
       </div>
-      <div class="streak-card">
-        <div>
-          <div class="stat-label">Avg pages</div>
-          <div class="stat-sub">per session, last 7 days</div>
-        </div>
-        <div class="streak-flame" id="stat-avg-pages">0</div>
+      <div class="stat-card">
+        <div class="stat-label">Avg pages</div>
+        <div class="stat-value" id="stat-avg-pages">0</div>
+        <div class="stat-sub">per session, last 7 days</div>
       </div>
     </div>
 
